@@ -1,30 +1,80 @@
-# React + TypeScript + Vite
+# Introdução
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologias:
 
-Currently, two official plugins are available:
+- Typescript, como linguagem de programação;
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React Hooks, como framework de desenvolvimento web para o frontend;
 
-## Expanding the ESLint configuration
+- Ant Design, como biblioteca de componentes;
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Jest e React Testing Library, como ferramentas de testes;
 
-- Configure the top-level `parserOptions` property like this:
+- Airbnb style guide, como guideline de padrão de escrita de código;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Axios, como biblioteca para chamada de APIs
+
+# Configurações
+
+### Instalar dependências
+
+- Agora deve-se instalar as depêndencias contidas no package.json
+
+```bash
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Rodar o projeto
+
+- Agora deve-se rodar o script de start
+
+```bash
+npm run dev
+url: http://localhost:5173/
+```
+
+### Rodar os testes
+
+- Agora deve-se rodar a suíte de testes
+
+```bash
+npm run test
+```
+
+# Problema
+
+- Criei o projeto utilizando o Vite por ser mais performático que Webpack;
+- A pasta 'src/api' contém a instância do Axios e as assinaturas das requests;
+- A pasta 'src/assets' contém as imagens;
+- A pasta 'src/components' contém os componentes utilizados nas pages e os arquivos index.ts exportam tais componentes;
+- A pasta 'src/context' contém o contexto utilizado para armazenar dados globais para evitar o prop drilling;
+- A pasta 'src/layouts' contém o protected layout que possui uma guarda de autenticação para as rotas não serem expostas sem que antes tenha sido feito o login;
+- A pasta 'src/pages' contém as páginas;
+- A pasta 'src/router' possui o arquivo de roteamento;
+- A pasta 'src/types' possui as tipagens das constantes;
+
+# Rotas
+
+- Login
+
+```bash
+url: http://localhost:5173/
+method: POST
+body: "email", "password"
+```
+
+> As próximas rotas só poderão ser acessadas com o Login feito
+
+- Restaurant List / Home
+
+```bash
+url: http://localhost:5173/restaurants
+method: GET
+```
+
+- Restaurant Detail
+
+```bash
+url: http://localhost:5173/details/:id
+method: GET
+```
