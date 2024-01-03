@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "name": "Cantina",
+        "description": "Restaurante brasileiro",
+        "location": "Rua Teste, número 123",
+        "phoneNumber": "(34) 1234-5678",
+        "drink": [
+            {
+                "id": 1,
+                "name": "Coca Cola",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "5.10"
+            },
+            {
+                "id": 2,
+                "name": "Água",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "1.00"
+            }
+        ],
+        "food": [
+            {
+                "id": 1,
+                "name": "Strogonoff",
+                "description": "Servido com arroz e batata palha",
+                "price": "40.00"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Self service",
+        "description": "Restaurante brasileiro",
+        "location": "Rua Teste, número 3421",
+        "phoneNumber": "(34) 1234-5678",
+        "drink": [
+            {
+                "id": 1,
+                "name": "Coca Cola",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "5.10"
+            },
+            {
+                "id": 2,
+                "name": "Água",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "1.00"
+            }
+        ],
+        "food": [
+            {
+                "id": 1,
+                "name": "Strogonoff",
+                "description": "Servido com arroz e batata palha",
+                "price": "40.00"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Outback",
+        "description": "Restaurante australiano",
+        "location": "Rua Outback, número 4321",
+        "phoneNumber": "(34) 143121-4323",
+        "drink": [
+            {
+                "id": 1,
+                "name": "Coca Cola",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "5.10"
+            }
+        ],
+        "food": [
+            {
+                "id": 1,
+                "name": "Strogonoff",
+                "description": "Servido com arroz e batata palha",
+                "price": "40.00"
+            },
+            {
+                "id": 2,
+                "name": "Ovo frito",
+                "description": "Pode escolher entre gema mole ou dura",
+                "price": "4.00"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Almoço grátis",
+        "description": "Restaurante brasileiro",
+        "location": "Rua Teste, número 321",
+        "phoneNumber": "(34) 143121-4323",
+        "drink": [
+            {
+                "id": 2,
+                "name": "Água",
+                "description": "Pode ser servida com gelo e limão",
+                "price": "1.00"
+            }
+        ],
+        "food": [
+            {
+                "id": 2,
+                "name": "Ovo frito",
+                "description": "Pode escolher entre gema mole ou dura",
+                "price": "4.00"
+            }
+        ]
+    }
+]
